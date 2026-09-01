@@ -34,15 +34,6 @@ export default function BlogDetails() {
     }
   }, [id]);
 
-  const handleDelete = () => {
-    fetch(`/api/blogs/${id}`, { method: 'DELETE' })
-      .then(res => {
-        if (!res.ok) throw new Error('Failed to delete the blog');
-        navigate('/');
-      })
-      .catch(err => setError(err.message));
-  };
-
   const handleCommentSubmit = async (e) => {
     e.preventDefault();
 
@@ -83,11 +74,9 @@ export default function BlogDetails() {
 
       {blog.image && ( <img src={blog.image} alt="Blog Visual" className="w-full h-96 object-cover rounded mb-4"/>)}
 
-      <p className="text-gray-700 text-lg whitespace-pre-line mb-4">{blog.body}</p>
-      <p className="text-sm text-right text-gray-500 mb-6">By {blog.author}</p>
-
-      <button onClick={handleDelete} className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 mb-6"> Delete Post</button>
-      <hr className="my-6" />
+      <p className="text-gray-700 text-lg whitespace-pre-line mb-4 leading-relaxed">{blog.body}</p>
+      <p className="text-sm text-right text-gray-500 mb-6 font-medium">By {blog.author}</p>
+      <hr className="my-6 border-gray-200" />
       <h2 className="text-xl font-semibold mb-2">Comments</h2>
 
       {blog.comments?.length > 0 ? (
