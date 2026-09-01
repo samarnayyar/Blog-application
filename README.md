@@ -2,12 +2,17 @@
 
 A modern, responsive, full-stack blog platform built with the **MERN** stack (MongoDB, Express.js, React 19, Node.js), styled with **Tailwind CSS v4**, and bundled with **Vite**.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://blog-application-rouge-nine.vercel.app/)
+[![API Backend](https://img.shields.io/badge/Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://blog-application-j5lp.onrender.com/api/health)
+
 ![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-v7-646CFF?logo=vite&logoColor=white)
+
+🌐 **Live Website:** [https://blog-application-rouge-nine.vercel.app/](https://blog-application-rouge-nine.vercel.app/)
 
 ---
 
@@ -91,7 +96,6 @@ blog-application/
    ```bash
    npm run dev
    ```
-   Server will run at: `http://localhost:3000`
 
 ---
 
@@ -111,7 +115,6 @@ blog-application/
    ```bash
    npm run dev
    ```
-   Client will launch at: `http://localhost:5173`
 
 ---
 
@@ -135,9 +138,3 @@ blog-application/
 - **CORS Protection**: Configured with strict origin checks to protect backend resources.
 - **Modular Component Design**: Clean separation of concerns between client and server architectures.
 
----
-
-## 👨‍💻 Author
-
-**Samar Nayyar**
-- GitHub: [@samarnayyar](https://github.com/samarnayyar)
